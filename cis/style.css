@@ -1,0 +1,70 @@
+A:hover {color:black;}
+        
+        
+A:link {text-decoration: none; color: black；}
+A:visited {text-decoration: none; color: black；}
+A:active {text-decoration: none; color: black；}
+A:hover {text-decoration: underline; color: black；}
+
+
+a:link {text-decoration:none;color:rgb(204, 224, 255);}
+a:visited {text-decoration:none;color:rgb(204, 224, 255);}
+
+a {
+    font-size: medium;
+    font-weight: bold;
+    font-family: Bahnschrift,exo,等线
+}
+p {
+    font-size: medium;
+    font-weight: bold;
+    font-family: Bahnschrift,exo,等线
+}
+.mainbox{
+    border:4px solid #3e3e3e;
+        background: #3a3a3a;
+        text-align: left;
+        line-height: 30px;
+        font-size: 14px;
+        color:#dddddd;
+}
+.topbox{
+    border:4px solid #3e3e3e;
+        background: #3b3b3b;
+        text-align: center;
+        line-height: 30px;
+        color:#dddddd;
+        font-size: 14px;
+}
+.article {
+    width: 97%;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.articlebox{
+    border:4px solid #3e3e3e;
+    background: #3a3a3a;
+    width: 82%;
+    float:right;
+    line-height: 30px;
+    font-size: 14px;
+    margin-top: 8;
+    margin-bottom:10px;
+}
+.footer{
+    border:4px solid #3e3e3e;
+    background: #3a3a3a;
+    height: 15px;
+    width: 100%;
+    position: fixed;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+body{
+    background:#2e2e2e;color:#dddddd;
+}
