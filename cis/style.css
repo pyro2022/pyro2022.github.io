@@ -101,7 +101,7 @@ body{
     position: fixed;
     z-index: -1;
     
-    background-image: url('https://github.com/pyro2022/pyro2022.github.io/blob/main/cis/IMG_20210415_020746.png');
+    background-image: url('IMG_20210415_020746.png');
     filter: blur(3px) brightness(75%);
     -webkit-filter: blur(3px) brightness(75%);
     background-position: center;
