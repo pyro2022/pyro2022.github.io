@@ -5,12 +5,19 @@
         <meta name="viewport" content="width=divice-width", initial-scale="1.0">
         <title>CAWIS</title>
     </head>
+    <script type="text/javascript" src="Concurrent.Thread.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script>
-        function time(){
-            document.getElementById("dateandtime").innerHTML=Date();
-        }
+        Concurrent.Thread.create(function time() {
+            
+                while(true){
+                    document.getElementById("dateandtime").innerHTML=Date();
+                }
+            
+            
+        });
         window.onload = time;
+        
     </script>
     
     <body>
@@ -36,10 +43,53 @@
                 border-radius:10px;
                 line-height: 30px;
                 font-size: 14px;" id="lab">
+                    <a href="http://wuyiban8014.icoc.me/col.jsp?id=148">国战三大会场<br></a>
                     <a href="#doc005">东航空难通告<br></a>
                     <a href="#doc001">处罚告知<br></a>
                     <a href="#doc004">通告<br></a>
                     <a href="mapworld.html">世界地图下载</a>
+                </div>
+                <div class="articlebox" id="doc006">
+                    <div style="text-align: center;">
+                        <h2>关于国战三大选举报名的通告<br>【国战内务部组织司】2022·9·11</h2>
+                    </div>
+                    <div style="border:8px;" class="article">
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <p>经国战内务部组织司决定，国战部第三次全部代表大会“政府选举”板块采用民主选举制，请有意向参加以下岗位选举的同志报名：
+
+                    <p>1.国战部总部部长
+
+                    <p>2.国战内务部部长
+
+                    <p>3.国战文游部部长
+
+                    <p>4.国战内务部组织司司长
+
+                    <p>5.国战内务部网安司司长
+
+                    <p>6.国战部全部代表大会常务委员会主任
+
+                    <p>7.国战部全部代表大会常务委员会副主任
+
+                    <p>8.国战部全部代表大会常务委员会委员
+
+                    <p>9.国战部全部代表大会常务委员会表决委员
+
+                    <p>若某个岗位无人报名则由国战六行联合推举人选。想要报名的同志请私聊或直接在群内@。
+
+                    <p>特别提示：焚风、北苏、德二、丹麦、南苏必须报名。
+
+
+                    <p style="text-align:right;">国战内务部组织司
+
+                    2022年9月11日</p>
+                    </div>
+                    <div class="article" style="text-align: center;">
+                        <a href='http://wuyiban8014.icoc.me/col.jsp?id=148'>
+                            <button type="button">国战部第三次全部代表大会会场</button>
+                        </a><!---->
+                        
+                    </div>
                 </div>
                 <div class="articlebox" id="doc005">
                     <div style="text-align: center;">
