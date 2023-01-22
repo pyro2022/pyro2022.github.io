@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=divice-width", initial-scale="1.0">
+        <title>CAWIS</title>
+    </head>
+    <link rel="stylesheet" type="text/css" href="oneClass.css">
+    <link rel="stylesheet" type="text/css" href="botton.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+        function time(){
+            document.getElementById("dateandtime").innerHTML=Date();
+        }
+        window.onload = time;
+        
+        check = function () {
+            getfolder();
+            window.location = folder + "DigitalLib.html#" + document.getElementById("idinput").value;
+        };
+        var folder = "";
+        function getfolder(){
+                        //页面解析到当前为止所有的script标签
+            var js = document.scripts;
+
+            //js[js.length - 1] 就是当前的js文件的路径
+            folder = js[js.length - 1].src.substring(0, js[js.length - 1].src.lastIndexOf("/") + 1);
+            //输出当前js文件所在的目录
+            //console.info(js);
+        }
+    </script>
+    
+        
+    
+    <body>
+        <!--<div class="bg">-->
+            <!-- 6 -->
+                <div class="topbox" id="head">
+                    <p></p>
+                    <h1 href="index.html">国战 历史与国战部信息库 >>> 国战部电子图书馆</h1>
+                    <p>Country and War Infomation storge</p>
+                    <p id="dateandtime"></p>
+                </div>
+                <div class="elecbookbox" id="0">
+                    <input id="idinput" type="text" name="elecid" value="CE-A-231-0001"><i onclick="check()">定位</i><a>|请自行查阅图书馆索引表进行定位</a><a href="index.html">|回到主页</a><br>
+                    <i>本图书馆除涉政内容外均采用蓝奏云跳转下载，其余外链图书有可能直接可以阅读，无法阅读的可以安装<a href="https://www.neat-reader.cn/">Neat Reader</a>阅读。<a herf="https://wwzn.lanzouw.com/b018gszva">本图书馆蓝奏云镜像(无涉政内容):https://wwzn.lanzouw.com/b018gszva</a>,密码:6jvs</i>
+                </div>
+                <div class="elecbookbox" id="CE-A-231-0001">
+                    <div style="text-align: center;">
+                        <h2>《大国崛起》（系列）<br>【国战信息部】(A..J)ID>>> CE-A-231-0001</h2>
+                        <a href="https://wwzn.lanzouw.com/b018gt04j">下载 提取码>>d73k</a>
+                    </div>
+                </div>
+                <div class="elecbookbox" id="CE-D+F-231-0001">
+                    <div style="text-align: center;">
+                        <h2>《固体火箭设计与制造》<br>【O:国战信息部 A:刘彦君、李清阳 P:科新社 9/10】(D..F)ID>>> CE-D+F-231-0001</h2>
+                        <a href="https://wwzn.lanzouw.com/i1zoR0ln8kra">下载</a>
+                    </div>
+                </div>
+                <div class="elecbookbox" id="CE-D+F-231-0002">
+                    <div style="text-align: center;">
+                        <h2>《原子弹制作从入门到精通》<br>【O:国战信息部 A、P:未知 6.5/10】(D..F)ID>>> CE-D+F-231-0002</h2>
+                        <a href="https://wwzn.lanzouw.com/b018gt04j">下载</a>
+                    </div>
+                </div>
+                <div class="elecbookbox" id="CE-J-231-0001">
+                    <div style="text-align: center;">
+                        <h2>《现代英国经济史》<br>【O:国战信息部 A、P:未知 8.9/10】(J)ID>>> CE-J-231-0001</h2>
+                        <a href="https://wwzn.lanzouw.com/ikVdI0ln8yqd">下载</a>
+                    </div>
+                </div>
+                <div class="cell"></div><!--https://wwzn.lanzouw.com/ikVdI0ln8yqd-->
+    </body>
+    
+</html><!--
+    .oooooo.         .o.       oooooo   oooooo     oooo ooooo  .oooooo..o 
+   d8P'  `Y8b       .888.       `888.    `888.     .8'  `888' d8P'    `Y8 
+  888              .8"888.       `888.   .8888.   .8'    888  Y88bo.      
+  888             .8' `888.       `888  .8'`888. .8'     888   `"Y8888o.  
+  888            .88ooo8888.       `888.8'  `888.8'      888       `"Y88b 
+  `88b    ooo   .8'     `888.       `888'    `888'       888  oo     .d8P 
+   `Y8bood8P'  o88o     o8888o       `8'      `8'       o888o 8""88888P'  -->
+   <!--Country And War Infomation storge-->
+
+   <!--DO NOT DELETE:IT'S ARTICLE BASIC MODULE.-->
+   <!--
+       <div style="
+        border:4px solid #3e3e3e;
+        background: #3a3a3a;
+        width: 82%;
+        float:right;
+        line-height: 30px;
+        font-size: 14px;" id="doc001">
+            <div style="text-align: center;">
+                <h2>-TITLE-<br>【-INFO SOURCE-】-TIME-</h2>
+            </div>
+            <div style="text-align: center;">
+                <a>-TEXT-</a>
+            </div>
+        </div>
+    -->
+    <!--BECUSE I'M SO LASY,SO IF U WANT TO ADD SOME ARTICLE,JUST COPY IT.-->
