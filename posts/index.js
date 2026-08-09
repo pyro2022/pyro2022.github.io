@@ -9,15 +9,5 @@ window.blogPosts = [
     "readTime": "1 min read",
     "excerpt": "Agent skills in AI is changing the world with a unique way.",
     "body": "<p>这些天，我开始使用 DeepSeek v4 pro 接入 Claude Code 作为我利用Agent工具的一个开始，我起初没想到它的功能会如此强大，直到我看见一个完善的静态网页呈现在我眼前，而我所需要做的只是提供需求和Token，一切都会在十分钟内安排妥当。作为一个业余的程序设计爱好者，做出这样的网站可能要花我一整天。对于节省精力来说，这无疑是最好的。不过这次“小试身手”的确给我带来了一些感悟。</p>\n<h2>In Short</h2>\n<p>人工智能发展不仅是带来便利，更是让所有人都能无门槛成为“创作者”。或许以后，我们不再说“谁能干”，而是说“谁会想”。谁知道呢？</p>\n<pre><code>Long live science.</code></pre>\n"
-  },
-  {
-    "id": 8,
-    "title": "test",
-    "subtitle": "1",
-    "tag": "test",
-    "date": "2026-08-09",
-    "readTime": "1 min read",
-    "excerpt": "1",
-    "body": "<p>Start writing your post here. You can use HTML tags like:</p>\n<h2>Section heading</h2>\n<p>Paragraph text...</p>\n<pre><code>code block</code></pre>\n"
   }
 ];
