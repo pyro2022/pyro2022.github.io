@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="site_title">Alex Chen — 个人博客</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">⭐</a>
+      <div class="nav-links">
+        <a href="#home" class="nav-link active" data-section="home" data-i18n="nav_home">首页</a>
+        <a href="#blog" class="nav-link" data-section="blog" data-i18n="nav_blog">博客</a>
+        <a href="#about" class="nav-link" data-section="about" data-i18n="nav_about">关于</a>
+      </div>
+      <div class="nav-actions">
+        <button class="lang-toggle" id="langToggle" aria-label="切换语言" data-i18n="lang_label">中/EN</button>
+        <button class="theme-toggle" id="themeToggle" data-i18n-aria="theme_toggle" data-i18n-title="theme_toggle" aria-label="切换暗色模式" title="切换暗色模式">
+          <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" data-i18n-aria="menu" aria-label="菜单">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main">
+    <!-- Home Section -->
+    <section id="home" class="section section-home active-section">
+      <div class="hero">
+        <div class="hero-content">
+          <p class="hero-greeting" data-i18n="hero_greeting">👋 你好，我是</p>
+          <h1 class="hero-name">Star Sagittarius</h1>
+          <p class="hero-tagline" data-i18n="hero_tagline">
+            学生，业余程序设计、平面设计，向往美好。
+          </p>
+          <div class="hero-cta">
+            <a href="#blog" class="btn btn-primary" data-nav="blog" data-i18n="cta_blog">阅读博客</a>
+            <a href="#about" class="btn btn-secondary" data-nav="about" data-i18n="cta_about">关于我</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-avatar">⭐</div>
+        </div>
+      </div>
+
+      <!-- Recent Posts Preview -->
+      <div class="recent-posts">
+        <div class="section-header">
+          <h2 data-i18n="recent_posts">最新文章</h2>
+          <a href="#blog" class="view-all" data-nav="blog" data-i18n="view_all">查看全部 →</a>
+        </div>
+        <div class="post-grid" id="recentPosts"></div>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="section">
+      <div class="blog-header">
+        <h1 data-i18n="blog_heading">博客</h1>
+        <p data-i18n="blog_desc">关于软件、设计的思考，以及偶尔的深入探讨</p>
+        <div class="blog-controls">
+          <div class="search-box">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+            <input type="text" id="searchInput" data-i18n-placeholder="search_placeholder" placeholder="搜索文章…" autocomplete="off">
+          </div>
+          <button class="sort-toggle" id="sortToggle" data-i18n="sort_newest">最新优先</button>
+          <div class="tag-filters" id="tagFilters"></div>
+        </div>
+      </div>
+      <div class="post-grid" id="allPosts"></div>
+      <div class="no-results" id="noResults" style="display:none;">
+        <p data-i18n="no_results">未找到文章，试试其他搜索词</p>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="about-content">
+        <div class="about-intro">
+          <div class="about-avatar">AC</div>
+          <h1 data-i18n="about_heading">关于我</h1>
+        </div>
+        <div class="about-text">
+          <p data-i18n="about_p1">
+            你好，我是 Alex。我是一名常驻西雅图的软件工程师，目前在一家开发工具初创公司工作。我热衷于整洁的代码、深思熟虑的设计，以及工程与产品的交汇。
+          </p>
+          <p data-i18n="about_p2">
+            这个博客是我分享学习心得的地方 —— 从 Web 性能的深度探究到工程文化的反思。我相信最好的软件是由那些既理解技术又理解人性的人构建的。
+          </p>
+          <p data-i18n="about_p3">
+            不写代码的时候，你会在喀斯喀特山脉的徒步道上找到我，或者我在煮一杯不太靠谱的咖啡，要么就是在读科幻小说。
+          </p>
+        </div>
+        <div class="about-links">
+          <a href="https://github.com" target="_blank" rel="noopener" class="about-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener" class="about-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            X / Twitter
+          </a>
+          <a href="mailto:alex@example.com" class="about-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <span data-i18n="about_email">邮箱</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Single Post View -->
+    <section id="post-view" class="section">
+      <div class="post-container" id="postContainer"></div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>&copy; <span id="currentYear"></span> Star Sagittarius <span data-i18n="footer_built">使用纯 HTML、CSS 和 JS 构建，感谢DeepSeek Agent协助</span></p>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="posts/index.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
