@@ -9,5 +9,15 @@ window.blogPosts = [
     "readTime": "1 min read",
     "excerpt": "新版图现在开源",
     "body": "<p>全图及源文件请加QQ群下载，遵循CC BY SA 2.0协议</p>\n<pre><code>QQ Group >> 995822361</code></pre>\n<h2>预览（2030+规划）</h2>\n<img src=\"https://imagepublication.cn-zj1.rains3.com/E5847A5641E1E5F3353347AECD65E9DB.png\">\n\n"
+  },
+  {
+    "id": 9,
+    "title": "2026暑假P.A.C服务器存档",
+    "subtitle": "2026 Summer Vacation P.A.C Minecraft Server Save",
+    "tag": "Minecraft",
+    "date": "2026-08-10",
+    "readTime": "1 min read",
+    "excerpt": "See Detail.",
+    "body": "<h2>点击以下链接下载</h2>\n<a href=\"https://serverpublication.cn-zj1.rains3.com/world.zip\">https://serverpublication.cn-zj1.rains3.com/world.zip</a>\n"
   }
 ];
