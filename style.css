@@ -245,12 +245,9 @@ input { font: inherit; }
 .hero-avatar {
   width: 160px; height: 160px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--color-accent), #7c3aed);
-  color: #fff;
-  font-size: 3rem;
-  font-weight: 700;
-  font-family: 'Merriweather', Georgia, serif;
-  display: flex; align-items: center; justify-content: center;
+  object-fit: cover;
+  display: block;
+  background: var(--color-tag-bg);
   box-shadow: 0 0 0 8px var(--color-bg), 0 0 0 10px var(--color-border);
 }
 
@@ -599,12 +596,9 @@ input { font: inherit; }
 .about-avatar {
   width: 80px; height: 80px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--color-accent), #7c3aed);
-  color: #fff;
-  font-size: 1.8rem;
-  font-weight: 700;
-  font-family: 'Merriweather', Georgia, serif;
-  display: flex; align-items: center; justify-content: center;
+  object-fit: cover;
+  display: block;
+  background: var(--color-tag-bg);
   flex-shrink: 0;
 }
 
@@ -669,7 +663,7 @@ input { font: inherit; }
   .hero-name { font-size: 2.4rem; }
   .hero-tagline { font-size: 1.05rem; }
   .hero-cta { justify-content: center; }
-  .hero-avatar { width: 120px; height: 120px; font-size: 2.2rem; }
+  .hero-avatar { width: 120px; height: 120px; }
 
   .nav-links {
     position: fixed;
